@@ -54,6 +54,5 @@ def main():
             print(f"\t{idx}: {allele}")
 
 
-
 if __name__ == "__main__":
     main()
