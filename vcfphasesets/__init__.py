@@ -47,7 +47,7 @@ def main():
     parser.add_argument("filename", help="VCF file")
     args = parser.parse_args()
 
-    phase_sets = read_vcf(args.filename)
+    _, phase_sets = read_vcf(args.filename)
     for (chrom, ps), alleles in phase_sets.items():
         print(f"{chrom}:{ps}")
         for idx, allele in enumerate(alleles):
