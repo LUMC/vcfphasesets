@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='vcfphasesets',
-    version='0.1',
+    version='0.2',
     description='A python library to extract phase sets from a vcf file using pysam.',
     url='http://github.com/LUMC/vcfphasesets',
     author='Mark Santcroos',

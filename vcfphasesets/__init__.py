@@ -39,7 +39,7 @@ def read_vcf(filename, mod_func=None):
                         variant = rec.start, rec.stop, rec.ref
                     phase_sets[key][idx].append(variant)
 
-        return {key: value for key, value in phase_sets.items() if any(value)}
+        return vcf_file.header.samples[0], {key: value for key, value in phase_sets.items() if any(value)}
 
 
 def main():
